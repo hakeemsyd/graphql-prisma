@@ -1,5 +1,6 @@
 const Post = {
-  author(parent, args, { db }, info) {
+  // Following is not needed since prisma takes care of it
+  /*author(parent, args, { db }, info) {
     return db.users.find((user) => {
       return user.id === parent.author;
     });
@@ -8,7 +9,7 @@ const Post = {
     return db.comments.filter((comment) => {
       return parent.id === comment.post;
     });
-  }
+  }*/
 }
 
 export {Post as default}

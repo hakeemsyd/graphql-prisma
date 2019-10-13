@@ -5,18 +5,19 @@ const prisma = new Prisma({
     endpoint: 'http://localhost:4466', // where prisma graphql api lives
 })
 
-
+export { prisma as default }
 /******* FOLLOWING ARE SOME SAMPLE QUERIES USING PRISMA SETUP *****************/
 
 /*
 * How to check if some item exists in database e.g. a post with given id and title.
 */
+/*
 prisma.exists.Post({
   id: "ck1lo4mzh01mr09914y44tief",
   title: "hacked!"
 }).then((exists) => {
   console.log(exists)
-})
+})*/
 
 
 /*
