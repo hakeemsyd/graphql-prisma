@@ -6,6 +6,7 @@ import Mutation from './resolvers/Mutation'
 import Post from './resolvers/Post'
 import User from './resolvers/User'
 import Subscription from './resolvers/Subscription'
+import './prisma'
 
 const pubSub = new PubSub()
 
