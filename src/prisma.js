@@ -3,6 +3,7 @@ import { Prisma } from 'prisma-binding'
 const prisma = new Prisma({
     typeDefs: 'src/generated/prisma.graphql', // this is not datamodel.graphql
     endpoint: 'http://localhost:4466', // where prisma graphql api lives
+    secret: '1234AbCd!'
 })
 
 export { prisma as default }
